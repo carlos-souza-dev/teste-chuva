@@ -5,9 +5,255 @@ $font-roboto: 'Roboto', sans-serif;
 $background: #FFFFFF;
 $secundary-color: #FDF1EB;
 $secundary-color1: #ED7839;
+$border-color-menu: #E7E7E7;
 $title-color: #4E4E4E;
 $text-color: #5C5C5C;
+$text-color-white:#FFFFFF;
 $text-header-color: #725C5C;
 $text-topics-color: #4D4D4D;
+$notification-color: #F85959;
 
+@mixin flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+@mixin fontStyle($font,$style,$weigth,$size,$height){
+    font-family: $font;
+    font-style: $style;
+    font-weight: $weigth;
+    font-size: $size;
+    line-height: $height;
+}
+
+%absolute {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+}
+
+body{
+    font-family: $font-roboto;
+    line-height: 1.5;
+}
+
+.container{
+    margin: 0 1rem;
+}
+
+.body{
+    max-width: 1366px;
+    display: flex;
+}
+
+.nav{
+    min-width: 220px;
+    background: $background;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    z-index: 1;
+    .logo-name{
+        width: 100%;
+        height: 68px;
+        background: $secundary-color1;
+        font-weight: 700;
+        font-size: 30px;
+        text-transform: uppercase;
+        color: $text-color-white;            
+        @include flex();
+        background: linear-gradient(180deg, #FFB354 0%, #EE7A3A 100%);
+    }
+
+    .div-logo{
+        height: calc(326px - 68px);
+        background-color: $background;
+        img{
+            width: 100%;
+        }
+    }
+
+    .ul-nav{
+        background-color: $background;
+        li{
+            @include fontStyle($font-quicksand,normal,500,15px,19px);
+            display: block;
+            border-bottom: 2px solid #E7E7E7;
+            display: flex;
+            justify-content: flex-end;
+            a{
+                background-color: $background;
+                display: block;
+                width: calc(100% - 9px);
+                padding: 7px calc(24px - 9px);
+                text-decoration: none;
+                color: $text-header-color;
+                &:hover{
+                    background-color: $secundary-color;
+                }
+            }
+            &:hover{
+                background: linear-gradient(180deg, #FFB455 0%, #ED7839 100%);
+            }
+        }
+    }
+}
+
+.header{
+    color: $text-header-color;
+    width: 1146px;
+    height: 68px;
+    padding: 0 29px 0 36px;
+    background-color: $secundary-color;
+    @include flex;
+    .data-header{
+        width: 789px;
+        p{
+            @include fontStyle($font-roboto,normal,normal,14px,16px);
+        }
+        h2{
+            @include fontStyle($font-roboto,normal,normal,22px,26px);
+        }
+    }
+    .language{
+        width: 97px;
+        height: 34px;
+        @include fontStyle($font-quicksand,normal,normal,14px,17px);
+        color: #333333;
+        // padding: 8px 24px 8px 31px;
+        border: 1px solid #CCCCCC;
+        box-sizing: border-box;
+        border-radius: 3px;
+        @include flex();
+        div{
+            width: 21px;
+            height: 21px;
+            background-image: url('/img/language-image.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        span{
+            width: 5px;
+            height: 5px;
+            margin-left: 5px;
+            background-color: #333333;
+            border-left: 5px solid $secundary-color;
+            border-right: 5px solid $secundary-color;
+            border-top: 5px solid #333333;
+        }
+    }
+    .data-profile{
+        @include fontStyle($font-quicksand,normal,normal,14px,17px);
+        width: calc(183px + 48px);
+        padding-left: 22px;
+        text-align: right;
+        @include flex;
+        .email{
+        @include fontStyle($font-quicksand,normal,normal,12px,15px);
+        }
+        .avatar{
+            position: relative;
+            width: 48px;
+            height: 30px;
+            img{
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+            }
+            .notification{
+                width: 12px;
+                height: 12px;
+                position: absolute;
+                top: 0;
+                right: -3px;
+                text-align: center;
+                color: $text-color-white;
+                @include fontStyle($font-roboto,normal,bold, 10px,12px);
+                background-color: $notification-color;
+                border-radius: 50%;
+            }
+        }
+    }
+}
+
+.first-article{
+    padding: 20px 45px;
+    background-color: $background;
+    .video{
+        width: 786px;
+        height: calc(439px + 54px + 19px);
+        margin-top: 19px;
+        .title-video{
+            width: 786px;
+            @include fontStyle($font-roboto,normal ,900,20px,25px);
+            color: $secundary-color1;
+            letter-spacing: 0,5;
+            margin-bottom: 22px;
+        }
+        .video-embed{
+            width: 786px;
+            height: 439px;
+            position: relative;
+            border-radius: 3px;
+            img{
+                width: 786px;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;  
+            }
+            p{
+                width: 734px;
+                @extend %absolute;
+                @include fontStyle($font-roboto,normal,900,24px,25px);
+                letter-spacing: 0.05em;
+                top: 35px;
+                left: 32px;
+                color: $text-color-white;
+            } 
+            .autor-video{
+                @extend %absolute;
+                width: 84px;
+                height: 86px;
+                top: 301px;
+                left: 31px;
+                border-radius: 50%;
+                border: 2px solid transparent;
+                box-shadow: 0 0 0 1px $secundary-color1;
+            }
+            h2{
+                @include fontStyle($font-roboto,normal,900,34px,25px);
+                @extend %absolute;
+                top: 311px;
+                left: 134px;   
+                letter-spacing: 0.05em;
+                color: $text-color-white;            
+            }
+            h3{
+                @include fontStyle($font-roboto,normal,900,20px,25px);
+                @extend %absolute;
+                top: 352px;
+                left: 134px;   
+                letter-spacing: 0.05em;
+                color: $text-color-white;
+            }
+            &:after{
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: inherit;
+                height: inherit;
+                content: '';
+                background: rgba(141, 53, 6, 0.5);
+                border-radius: inherit;
+            }    
+        }
+    }
+}
