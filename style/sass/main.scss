@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&family=Roboto:wght@400;500;700;900&display=swap');
 
 $font-quicksand: 'Quicksand', sans-serif;
 $font-roboto: 'Roboto', sans-serif;
@@ -48,7 +48,7 @@ body{
 }
 
 .container{
-    margin: 0 1rem;
+        padding: 15px;
 }
 
 .body{
@@ -83,6 +83,12 @@ body{
 
     .ul-nav{
         background-color: $background;
+        .ative-menu{
+            background: linear-gradient(180deg, #FFB455 0%, #ED7839 100%);
+            a{
+                background-color: $secundary-color;
+            }
+        }
         li{
             @include fontStyle($font-quicksand,normal,500,15px,19px);
             display: block;
@@ -185,7 +191,9 @@ body{
 }
 
 .first-article{
+    width: 1146px;
     padding: 20px 45px;
+    display: flex;
     background-color: $background;
     .video{
         width: 786px;
@@ -256,4 +264,335 @@ body{
             }    
         }
     }
+}
+
+.aside{
+    width: 242px;
+    margin-left: auto;
+
+    article:first-child {
+        display: flex;
+        justify-content: space-between;
+
+        &:first-child{
+            margin-left: calc(56px - 31px);
+        }
+    }
+    
+    .btn-download {
+        display: block;
+        width: 120px;
+        height: 31px;
+        background-color: $secundary-color1;
+        padding: 0 12px;
+        @include flex();
+        justify-content: space-between;
+        text-decoration: none;
+        @include fontStyle($font-roboto,normal,500,16px,19px);
+        color: $text-color-white;
+        border-radius: 4px;
+        
+        .img-download{
+            width: 19px;
+            height: 19px;
+        }
+    }
+
+    .btn-star {
+        @extend .btn-download;
+        width: 41px;
+
+        .img-start{
+            @extend .img-download;
+        }
+    }
+
+    .btn-doi {
+        @extend .btn-download;
+        width: 43px;
+
+        .img-doi {
+            @extend .img-download;
+
+        }
+    }
+
+    h2{
+        width: 100%;
+        @include fontStyle($font-roboto,normal,500,14px,25px);
+        color: $secundary-color1;
+        margin: 12px 0;
+        text-align: right;
+        letter-spacing: 0.05em;
+    }
+   
+    h3 {
+        display: block;
+        padding: 15px 11px 15px 9px;
+        background-color: $secundary-color;
+        @include fontStyle($font-roboto,normal,500,20px,25px);
+        color: $title-color;
+        border: 1px solid #ECECEC;
+        box-sizing: border-box;
+        border-radius: 3px;
+    }
+
+    .div-content{
+        padding: 15px;
+        height: calc(439px - 45px);
+        @include fontStyle($font-quicksand,normal,normal,12px,15px);
+        color: $text-color;
+        border: 1px solid #ECECEC;
+        box-sizing: border-box;
+        border-radius: 3px;
+        overflow: auto;
+        
+        p {
+            display: block;  
+            margin-bottom: 5px;
+        }
+        
+        .bold{
+            font-weight: bold;
+        }
+        
+        h5 {
+            padding: 20px 0 0;
+            @include fontStyle($font-quicksand,normal,normal,12px,15px);
+            display: block;
+            font-weight: bold;
+        }
+
+        ul{
+            display: inline;
+            @extend .div-content;
+        }
+
+        li {
+            display: block;
+            margin-bottom: 5px;
+            list-style: none;
+        }
+
+        .last-ul {
+            color: $text-header-color;
+        }
+
+        &::-webkit-scrollbar {
+            width: 5px;
+            background-color: #BFBFBF;
+            border-radius: 5px;
+        }
+    }
+}
+
+
+.section-resum{
+    width: 1058px;
+    margin: 30px 43px;
+    background-color: $background;
+    color: $text-color;
+    border: 1px solid #ECECEC;
+    box-sizing: border-box;
+    border-radius: 3px;
+
+    .title-resume {
+        display: block;
+        padding: 15px 11px 15px 9px;
+        background-color: $secundary-color;
+        @include fontStyle($font-roboto,normal,500,20px,25px);
+        color: $title-color;
+        border: 1px solid #ECECEC;
+        box-sizing: border-box;
+        border-radius: 3px;
+    }
+
+    p {
+        @include fontStyle($font-quicksand,normal,normal,14px,23px);
+        letter-spacing: 0.02em;
+    }
+}
+
+.discution {
+    width: 1058px;
+    margin: 30px 43px;
+    background-color: $background;
+    color: $text-color;
+    border: 1px solid #ECECEC;
+    box-sizing: border-box;
+    border-radius: 3px;
+
+    .title-discution {
+        display: block;
+        padding: 15px 11px 15px 9px;
+        background-color: $secundary-color;
+        @include fontStyle($font-roboto,normal,500,20px,25px);
+        color: $title-color;
+        border: 1px solid #ECECEC;
+        box-sizing: border-box;
+        border-radius: 3px;
+    }
+
+    .new-topic {
+        border-bottom: 1px solid #E7E7E7;
+        margin:0 16px;
+
+        h2 {
+            display: block;
+            height: 22px;
+            @include fontStyle($font-roboto,normal,bold,18px,21px);
+            color: $secundary-color1;
+            text-align: center;
+            line-height: 22px;
+            margin: 15px 0;
+        }
+        
+        .icon-discution {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            
+            img {
+                width: 50.26px;
+                height: 48.94px;
+                margin: calc(53.74px / 2);
+            }
+        }
+        
+        p {
+            width: 626px;
+            height: 39px;
+            @include fontStyle($font-quicksand,normal,normal,14px, 19px);
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .btn-create-topic {
+            position: relative;
+            transform: translateY(50%);
+            display: block;
+            width: 120px;
+            height: 31px;
+            text-decoration: none;
+            @include flex();
+            justify-content: space-evenly;
+            color: $text-color-white;
+            border-radius: 4px;
+            margin: 0 auto;
+            background: linear-gradient(180deg, #FEB254 0%, #F0813D 100%);
+            box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+            border-radius: 4px;    
+            
+            h6 {
+                display: block;
+                width: 83px;
+                margin: 0;
+                @include fontStyle($font-quicksand,normal,bold,15px,16px); 
+            }
+            
+            .plus{
+                width: 17px;
+                height: 17px;
+            }
+            
+        }
+        
+    }
+}
+
+.content {
+    width: 1028px;
+    height: 148px;
+    padding: 17px 24px;
+    background: #FFFFFF;
+    border: 1px solid #E7E7E7;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    margin: 30px auto 8.5px auto;
+
+    h2 {
+        @include fontStyle($font-quicksand,normal,bold,16px,20px);
+        color: $secundary-color1;
+        margin: 0 0 5px 0;
+    }
+    
+    h6 {
+        @include fontStyle($font-quicksand,normal,700,12px,15px);
+        color: $text-header-color;
+        margin-bottom: 8px;
+    }
+    
+    p {
+        @include fontStyle($font-quicksand,normal,normal,14px,17px);
+        color: $text-topics-color;
+    }
+
+    .status {
+        width: 200px;
+        height: 28px;
+        margin: 8px 0;
+        @include flex();
+
+        .doth {
+            position: relative;
+            width: 4px;
+            height: 4px;
+            background-color: $notification-color;
+            margin: 0 7.5px 0 0;
+            left: -12px;
+
+            &:before {
+                content: '';
+                position: absolute;
+                bottom: 8px;
+                width: 4px;
+                height: 4px;
+                background-color: $notification-color;    
+
+            }
+
+            &:after {
+                content: '';
+                position: absolute;
+                top: 8px;
+                width: 4px;
+                height: 4px;
+                background-color: $notification-color;   
+
+            }
+        }
+
+        .like-icon {
+            width: 27px;
+            height: 19px;
+            align-self: center;
+            text-align: center;
+            margin: 0 7.5px 0 0px;
+            background-color: $secundary-color1;
+            box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+            border-radius: 2px;
+
+            img {
+                width: 14px;
+                height: 14px;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+        }
+
+        div {
+            @include fontStyle($font-quicksand,normal,400,14px,19px);
+            color: $text-header-color;
+            width: auto;
+            height: 28px;
+            line-height: 28px;
+            margin:0 7.5px;
+        }
+    }
+}
+
+.topic-two {
+    margin-top: 17px;
 }

@@ -19,7 +19,7 @@
             <li><a href="#">Comitês</a></li>
             <li><a href="#">Autores</a></li>
             <li><a href="#">Eixos temáticos</a></li>
-            <li><a href="#">Trabalhos</a></li>
+            <li class="ative-menu"><a href="#">Trabalhos</a></li>
             <li><a href="#">Contato</a></li>
         </ul>
     </nav>
@@ -60,50 +60,49 @@
                     <h3>FCA / Universidade Estadual de Campinas</h3>
                 </div>
                 </div>
-                <aside>
+                <aside class="aside">
                     <article>
                         <a href="#" class="btn btn-download">
-                            <img src="img/download.png" alt="icone de dawonload">
+                            <img class="img-download" src="img/download.png" alt="icone de dawonload">
                             <span>Download</span>
                         </a>
-                        <a href="#" class="btn btn-start">
-                            <img src="img/start.png" alt="favoritar">
+                        <a href="#" class="btn btn-star">
+                            <img  class="img-start"  src="img/start.png" alt="favoritar">
                         </a>
                         <a href="#" class="btn btn-doi">
-                            <img src="img/doi.png" alt="">
+                            <img  class="img-doi" src="img/doi.png" alt="">
                         </a>
                     </article>
-                    <article>
-                        <h2>COMO CITAR ESSE TRABALHO?</h2>
+                    <h2>COMO CITAR ESSE TRABALHO?</h2>
+                    <article >
                         <h3>Detalhes</h3>
-                        <p>Tipo de Apresentação:</p>
-                        <p class="bold"> Pôster</p>
-                        <p>Eixo temático:</p>
-                        <p class="bold">Alimentação e saúde (AS)</p>
-                        <p>Palavras-chaves:</p>
-                        <p class="bold">Alimentos funcionais, alimentação escolar.</p>
-
-                        <h5 class="title">Autores:</h5>
-                        <ul>
-                            <li>Galileo Galilei¹</li>
-                            <li>Berta Lange de Morretes²</li>
-                            <li>Isaac Newton³</li>
-                            <li>Cesar Lattes¹</li>
-                            <li>Stephen Hawking⁴</li>
-                        </ul>
-
-                        <ul>
-                            <li>¹Universidade Estadual de Campinas</li>
-                            <li>²Universidade de São Paulo</li>
-                            <li>³Instituto Nacional de Pesquisas Espaciais</li>
-                            <li>⁴Universidade Federal do Rio de Janeiro</li>
-                        </ul>
+                        <div class="div-content">
+                            <p>Tipo de Apresentação:<span class="bold"> Pôster</span></p>
+                            <p>Eixo temático:<span class="bold"> Alimentação e saúde (AS)</span></p>
+                            <p>Palavras-chaves:<span class="bold"> Alimentos funcionais, alimentação escolar</span>.</p>
+    
+                            <h5 class="title">Autores:</h5>
+                            <ul>
+                                <li>Galileo Galilei¹</li>
+                                <li>Berta Lange de Morretes²</li>
+                                <li>Isaac Newton³</li>
+                                <li>Cesar Lattes¹</li>
+                                <li>Stephen Hawking⁴</li>
+                            </ul>
+    
+                            <ul class="last-ul">
+                                <li>¹Universidade Estadual de Campinas</li>
+                                <li>²Universidade de São Paulo</li>
+                                <li>³Instituto Nacional de Pesquisas Espaciais</li>
+                                <li>⁴Universidade Federal do Rio de Janeiro</li>
+                            </ul>                            
+                        </div>
                     </article>
-
                 </aside>
             </section>
             <section class="section-resum">
-                <h1>Resumo</h1>
+                <h1 class="title-resume">Resumo</h1>
+                <div class="container">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae turpis auctor, mollis felis
                     ut, commodo turpis. Phasellus felis mauris, egestas eget cursus et, iaculis quis lacus. Fusce auctor
                     eros sed magna ultricies gravida. Etiam aliquam dictum nisl, vel aliquet enim accumsan sit amet.
@@ -145,11 +144,13 @@
                         elit.</p>
                     </p>
                 </span>
+            </div>
             </section>
             <section class="discution">
+                <h1 class="title-discution">Discussões</h1>
                 <div class="new-topic">
-                    <div>
-                        <h2>Compartilhe suas ideias ou dúvidas com os autores!</h2>
+                    <h2>Compartilhe suas ideias ou dúvidas com os autores!</h2>
+                    <div class="icon-discution">
                         <img src="img/icone1.png" alt="icone">
                         <img src="img/icone2.png" alt="icone">
                         <img src="img/icone3.png" alt="icone">
@@ -157,11 +158,12 @@
                     <p>Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus
                         questionamentos ou sugestões para o autor!</p>
                     <a href="#" class="btn btn-create-topic">
-                        <div class="plus"></div>
-                        <p>criar tópico</p>
+                        <img class="plus" src="img/plus.png" alt="mais">
+                        <h6>criar tópico</h6>
                     </a>
                 </div>
-                <div class="create-topic">
+                <!-- aparecerar com javascript -->
+                <div class="create-topic" style="display: none;">
                     <h3>Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</h3>
                     <form>
                         <label>Assunto</label>
@@ -179,8 +181,8 @@
                     </form>
                 </div>
                 <!-- tópico deve aparecer após salvar -->
-                <article>
-                    <div class="topic-finished">
+                <article style="display: none;">
+                    <div class="topic-finished" style="display: none;">
                         <h2>Seu tópico foi enviado com sucesso! :D</h2>
         
                             <p>Agradecemos por sua contribuição, uma notificação será enviada ao seu email assim que seu tópico for respondido!</p>
@@ -195,16 +197,18 @@
                         </div>
                 </article>
                 </div>
+
                 <div class="content topic-one">
                     <div>
                         <h2>Assunto da pergunta aparece aqui</h2>
                     <h6>Carlos Henrique Santos</h6>
                     <p>Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
                     
-                    <div>
+                    <div class="status">
                         <div class="doth"></div>
-                        <p>1 like</p>
-                        <p>1 resposta</p>
+                        <a class="like-icon" href="#" ><img src="/img/like.png" alt="gostei"></a>
+                        <div> 1 like</div>
+                        <div> 1 resposta</div>
                     </div>
                     <!-- parte fosca em cima do novo tópico -->
                     <div>
@@ -221,10 +225,11 @@
                     <h6>Carlos Henrique Santos</h6>
                     <p>Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
                     
-                    <div>
+                    <div class="status">
                         <div class="doth"></div>
-                        <p>4 like</p>
-                        <p>4 resposta</p>
+                        <a class="like-icon" href="#" ><img src="/img/like.png" alt="gostei"></a>
+                        <div> 4 like</div>
+                        <div> 4 resposta</div>
                     </div> 
                     </div>
                     <!-- será mostrado ao clicar no tópico -->

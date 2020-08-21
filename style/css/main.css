@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&family=Roboto:wght@400;500;700;900&display=swap");
 .first-article .video .video-embed p, .first-article .video .video-embed .autor-video, .first-article .video .video-embed h2, .first-article .video .video-embed h3 {
   position: absolute;
   top: 0;
@@ -21,7 +21,7 @@ body {
 }
 
 .container {
-  margin: 0 1rem;
+  padding: 15px;
 }
 
 .body {
@@ -57,6 +57,12 @@ body {
 }
 .nav .ul-nav {
   background-color: #FFFFFF;
+}
+.nav .ul-nav .ative-menu {
+  background: linear-gradient(180deg, #FFB455 0%, #ED7839 100%);
+}
+.nav .ul-nav .ative-menu a {
+  background-color: #FDF1EB;
 }
 .nav .ul-nav li {
   font-family: "Quicksand", sans-serif;
@@ -191,7 +197,9 @@ body {
 }
 
 .first-article {
+  width: 1146px;
   padding: 20px 45px;
+  display: flex;
   background-color: #FFFFFF;
 }
 .first-article .video {
@@ -274,6 +282,349 @@ body {
   content: '';
   background: rgba(141, 53, 6, 0.5);
   border-radius: inherit;
+}
+
+.aside {
+  width: 242px;
+  margin-left: auto;
+}
+.aside article:first-child {
+  display: flex;
+  justify-content: space-between;
+}
+.aside article:first-child:first-child {
+  margin-left: calc(56px - 31px);
+}
+.aside .btn-download, .aside .btn-star, .aside .btn-doi {
+  display: block;
+  width: 120px;
+  height: 31px;
+  background-color: #ED7839;
+  padding: 0 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  border-radius: 4px;
+}
+.aside .btn-download .img-download, .aside .btn-star .img-download, .aside .btn-doi .img-download, .aside .btn-star .img-start, .aside .btn-doi .img-doi {
+  width: 19px;
+  height: 19px;
+}
+.aside .btn-star {
+  width: 41px;
+}
+.aside .btn-doi {
+  width: 43px;
+}
+.aside h2 {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 25px;
+  color: #ED7839;
+  margin: 12px 0;
+  text-align: right;
+  letter-spacing: 0.05em;
+}
+.aside h3 {
+  display: block;
+  padding: 15px 11px 15px 9px;
+  background-color: #FDF1EB;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+  color: #4E4E4E;
+  border: 1px solid #ECECEC;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+.aside .div-content, .aside .div-content ul {
+  padding: 15px;
+  height: calc(439px - 45px);
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #5C5C5C;
+  border: 1px solid #ECECEC;
+  box-sizing: border-box;
+  border-radius: 3px;
+  overflow: auto;
+}
+.aside .div-content p {
+  display: block;
+  margin-bottom: 5px;
+}
+.aside .div-content .bold {
+  font-weight: bold;
+}
+.aside .div-content h5 {
+  padding: 20px 0 0;
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  display: block;
+  font-weight: bold;
+}
+.aside .div-content ul {
+  display: inline;
+}
+.aside .div-content li {
+  display: block;
+  margin-bottom: 5px;
+  list-style: none;
+}
+.aside .div-content .last-ul {
+  color: #725C5C;
+}
+.aside .div-content::-webkit-scrollbar, .aside .div-content ul::-webkit-scrollbar {
+  width: 5px;
+  background-color: #BFBFBF;
+  border-radius: 5px;
+}
+
+.section-resum {
+  width: 1058px;
+  margin: 30px 43px;
+  background-color: #FFFFFF;
+  color: #5C5C5C;
+  border: 1px solid #ECECEC;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+.section-resum .title-resume {
+  display: block;
+  padding: 15px 11px 15px 9px;
+  background-color: #FDF1EB;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+  color: #4E4E4E;
+  border: 1px solid #ECECEC;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+.section-resum p {
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 23px;
+  letter-spacing: 0.02em;
+}
+
+.discution {
+  width: 1058px;
+  margin: 30px 43px;
+  background-color: #FFFFFF;
+  color: #5C5C5C;
+  border: 1px solid #ECECEC;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+.discution .title-discution {
+  display: block;
+  padding: 15px 11px 15px 9px;
+  background-color: #FDF1EB;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+  color: #4E4E4E;
+  border: 1px solid #ECECEC;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+.discution .new-topic {
+  border-bottom: 1px solid #E7E7E7;
+  margin: 0 16px;
+}
+.discution .new-topic h2 {
+  display: block;
+  height: 22px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ED7839;
+  text-align: center;
+  line-height: 22px;
+  margin: 15px 0;
+}
+.discution .new-topic .icon-discution {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.discution .new-topic .icon-discution img {
+  width: 50.26px;
+  height: 48.94px;
+  margin: calc(53.74px / 2);
+}
+.discution .new-topic p {
+  width: 626px;
+  height: 39px;
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  margin: 0 auto;
+  text-align: center;
+}
+.discution .new-topic .btn-create-topic {
+  position: relative;
+  transform: translateY(50%);
+  display: block;
+  width: 120px;
+  height: 31px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  color: #FFFFFF;
+  border-radius: 4px;
+  margin: 0 auto;
+  background: linear-gradient(180deg, #FEB254 0%, #F0813D 100%);
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+  border-radius: 4px;
+}
+.discution .new-topic .btn-create-topic h6 {
+  display: block;
+  width: 83px;
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 16px;
+}
+.discution .new-topic .btn-create-topic .plus {
+  width: 17px;
+  height: 17px;
+}
+
+.content {
+  width: 1028px;
+  height: 148px;
+  padding: 17px 24px;
+  background: #FFFFFF;
+  border: 1px solid #E7E7E7;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  margin: 30px auto 8.5px auto;
+}
+.content h2 {
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ED7839;
+  margin: 0 0 5px 0;
+}
+.content h6 {
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: #725C5C;
+  margin-bottom: 8px;
+}
+.content p {
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #4D4D4D;
+}
+.content .status {
+  width: 200px;
+  height: 28px;
+  margin: 8px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content .status .doth {
+  position: relative;
+  width: 4px;
+  height: 4px;
+  background-color: #F85959;
+  margin: 0 7.5px 0 0;
+  left: -12px;
+}
+.content .status .doth:before {
+  content: '';
+  position: absolute;
+  bottom: 8px;
+  width: 4px;
+  height: 4px;
+  background-color: #F85959;
+}
+.content .status .doth:after {
+  content: '';
+  position: absolute;
+  top: 8px;
+  width: 4px;
+  height: 4px;
+  background-color: #F85959;
+}
+.content .status .like-icon {
+  width: 27px;
+  height: 19px;
+  align-self: center;
+  text-align: center;
+  margin: 0 7.5px 0 0px;
+  background-color: #ED7839;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+  border-radius: 2px;
+}
+.content .status .like-icon img {
+  width: 14px;
+  height: 14px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.content .status div {
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #725C5C;
+  width: auto;
+  height: 28px;
+  line-height: 28px;
+  margin: 0 7.5px;
+}
+
+.topic-two {
+  margin-top: 17px;
 }
 
 /*# sourceMappingURL=main.css.map */
