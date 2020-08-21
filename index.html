@@ -30,7 +30,7 @@
                 <h2>Anais do 13º Simpósio Latino Americano de Ciência de Alimentos </h2>
                 <p>ISSN: 1234-5678</p>
             </div>
-            <div class="language"><div></div><p>PT, BR</p><span></span></div>
+            <div class="language"><div><svg class="icon icon-network"><use xlink:href="#icon-network"></use></svg></div><p>PT, BR</p><span></span></div>
             <div class="data-profile">
                 <div>
                     <p>Bem vindo!</p>
@@ -103,7 +103,7 @@
             <section class="section-resum">
                 <h1 class="title-resume">Resumo</h1>
                 <div class="container">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae turpis auctor, mollis felis
+                <p class="resum-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae turpis auctor, mollis felis
                     ut, commodo turpis. Phasellus felis mauris, egestas eget cursus et, iaculis quis lacus. Fusce auctor
                     eros sed magna ultricies gravida. Etiam aliquam dictum nisl, vel aliquet enim accumsan sit amet.
                     Donec finibus nisi tellus, ut viverra lorem vestibulum ut. Phasellus condimentum orci id leo
@@ -112,7 +112,7 @@
                     non lorem. Sed id nisl metus. Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros
                     vestibulum. Etiam aliquam dictum nisl, vel aliquet enim accumsan sit ametl accumsant... <span
                         class="more">ver mais</span></p>
-                <span class="show-more">
+                <span class="resum-show-more" style="display: none;">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae turpis auctor, mollis
                         felis ut, commodo turpis. Phasellus felis mauris, egestas eget cursus et, iaculis quis lacus.
                         Fusce auctor eros sed magna ultricies gravida. Etiam aliquam dictum nisl, vel aliquet enim
@@ -171,33 +171,40 @@
 
                         <label>Conteúdeo</label>
                         <textarea type="text" rows="5" cols="33"></textarea>
-                        <div>
+                        <div class="div-icon">
                             <div class="icon">
                                 <img src="img/Shape.png" alt="Botão-Negrito">
-                            <img src="img/Shape (1).png" alt="Botão-itálico">
+                                <img src="img/Shape (1).png" alt="Botão-itálico">
                             </div>
                             <button type="submit">Enviar</button>
                         </div>
                     </form>
                 </div>
                 <!-- tópico deve aparecer após salvar -->
-                <article style="display: none;">
-                    <div class="topic-finished" style="display: none;">
+                <article class="article-finished" style="display: none;">
+                    <div class="topic-finished">
                         <h2>Seu tópico foi enviado com sucesso! :D</h2>
         
                             <p>Agradecemos por sua contribuição, uma notificação será enviada ao seu email assim que seu tópico for respondido!</p>
                             
                             <a href="#">Descubra outros trabalhos!</a>
                             <a href="#" class="btn btn-create-topic">criar novo tópico</a>
-                        </div>
-                        <div>
+                    </div>
+                        <div class="topic-save">
                             <h2>Assunto da pergunta aparece aqui</h2>
                     <h6>Carlos Henrique Santos</h6>
                     <p>Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
                         </div>
+                        <!-- parte fosca em cima do novo tópico -->
+                    <div class="success">
+                        <img src="img/check.png" alt="icone de finalizado">
+                        <h4>Aguardando feedback dos autores</h4>
+                        <a href="#">Editar tópico</a>
+                    </div>
                 </article>
                 </div>
 
+                <div class="content-container">
                 <div class="content topic-one">
                     <div>
                         <h2>Assunto da pergunta aparece aqui</h2>
@@ -210,16 +217,10 @@
                         <div> 1 like</div>
                         <div> 1 resposta</div>
                     </div>
-                    <!-- parte fosca em cima do novo tópico -->
-                    <div>
-                        <img src="img/checked.png" alt="icone de finalizado">
-                        <h4>Aguardando feedback dos autores</h4>
-                        <a href="#">Editar tópico</a>
-                    </div>
                     </div>                    
                 </div>
 
-                <div class="content topic-two">
+                <div class="content topic-one">
                     <div>
                         <h2>Assunto da pergunta aparece aqui</h2>
                     <h6>Carlos Henrique Santos</h6>
@@ -232,34 +233,70 @@
                         <div> 4 resposta</div>
                     </div> 
                     </div>
+                </div>
                     <!-- será mostrado ao clicar no tópico -->
+                <div class="content-expanded" style="display: none;">
+                    <div class="content topic-one">
+                            <h2>Assunto da pergunta aparece aqui</h2>
+                        <h6>Carlos Henrique Santos</h6>
+                        <p>Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo?</p>
+                        
+                        <div class="status">
+                            <div class="doth"></div>
+                            <a class="like-icon" href="#" ><img src="/img/like.png" alt="gostei"></a>
+                            <div> 4 like</div>
+                            <div> 4 resposta</div>
+                        </div> 
+                    </div>
                     <div class="coment-topic topic-checked">
-                        <img src="img/check.png" alt="">
-                        <h2>Adriano da Silva</h2>
+                        <div class="coment-div">
+                            <h2>Adriano da Silva</h2>
+                            <div>
+                                <span>Autor</span> 
+                                <img src="img/checked.png" alt="">
+                            </div>
+                        </div>
                         <p>Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.</p>
                     </div> 
-                    <div class="coment-topic">
-                        <h2>Carlos Henrique Santos</h2>
+                    <div class="coment-topic ">
+                        <div class="coment-div">
+                            <h2>Carlos Henrique Santos</h2>
+                            <div>
+                                <span></span> 
+                                <img src="" alt="">
+                            </div>
+                        </div>
                         <p>Consegui entender melhor agora! Parece que a variação da análise da dimensão e impacto de processo formativo situado impacto de processo formativo.</p>
 
                         <p>Obrigada pela resposta, muito interessante o seu trabalho! </p>
-                    </div> 
+                    </div>
                     <div class="coment-topic topic-checked">
-                        <img src="img/check.png" alt="">
-                        <h2>Carmila Ferreira Andrade</h2>
+                        <div class="coment-div">
+                            <h2>Carmila Ferreira Andrade</h2>
+                            <div>
+                                <span>Autor</span> 
+                                <img src="img/checked.png" alt="">
+                            </div>
+                        </div>
                         <p>Também ínteressante lembrar que o relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.</p>
 
                         <p>Situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.</p>
                     </div> 
                     <div class="coment-topic topic-checked">
-                        <img src="img/check.png" alt="">
-                        <h2>Ana Carolina</h2>
+                        <div class="coment-div">
+                            <h2>Adriano da Silva</h2>
+                            <div>
+                                <span>Autor</span> 
+                                <img src="img/checked.png" alt="">
+                            </div>
+                        </div>
                         <p>Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.</p>
-                    </div>                   
-                </div>                            
+                    </div>                 
+                </div> 
+            </div>                           
             </section>
         </main>
-        <footer>
+        <footer class="section-footer">
             <img src="/img/imagem - footer.png" alt="">
         </footer>
     </section>
