@@ -1,0 +1,41 @@
+
+.section-resum{
+    width: 1058px;
+    margin: 30px 43px;
+    background-color: $background;
+    color: $text-color;
+    border: 1px solid #ECECEC;
+    box-sizing: border-box;
+    border-radius: 3px;
+
+    .more {
+        color: $secundary-color1;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .less {
+        @extend .more;
+    }
+
+    .title-resume {
+        display: block;
+        padding: 15px 11px 15px 9px;
+        background-color: $secundary-color;
+        @include fontStyle(500,20px,25px);
+        color: $title-color;
+        border: 1px solid #ECECEC;
+        box-sizing: border-box;
+        border-radius: 3px;
+    }
+
+    .resum-text {
+        margin-bottom: 0px;
+    }
+
+    p {
+        @include fontStyle(normal,14px,23px,$font-quicksand);
+        letter-spacing: 0.02em;
+        margin-bottom: 20px;
+    }
+}

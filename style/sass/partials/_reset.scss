@@ -1,0 +1,72 @@
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&family=Roboto:wght@400;500;700;900&display=swap');
+
+/* Variables */
+$font-quicksand: 'Quicksand', sans-serif;
+$font-roboto: 'Roboto', sans-serif;
+$background: #FFFFFF;
+$secundary-color: #FDF1EB;
+$secundary-color1: #ED7839;
+$border-color-menu: #E7E7E7;
+$title-color: #4E4E4E;
+$text-color: #5C5C5C;
+$text-color-white:#FFFFFF;
+$text-header-color: #725C5C;
+$text-topics-color: #4D4D4D;
+$notification-color: #F85959;
+
+/* Mixin */
+@mixin flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin fontStyle($weigth,$size, $height, $font: $font-roboto){
+    font-family: $font;
+    font-weight: $weigth;
+    font-size: $size;
+    line-height: $height;
+}
+
+/* Extend */
+%absolute {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+/* Reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+}
+
+body{
+    font-family: $font-roboto;
+    line-height: 1.5;
+}
+
+
+.container{
+        padding: 15px;
+}
+
+.hide-all{
+    display: none;
+}
+
+.show-all{
+    display: block;
+}
+
+.body{
+    max-width: 1366px;
+    display: flex;
+}

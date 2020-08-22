@@ -1,0 +1,120 @@
+/* Asside */
+.aside{
+    width: 242px;
+    margin-left: auto;
+
+    article:first-child {
+        display: flex;
+        justify-content: space-between;
+
+        &:first-child{
+            margin-left: calc(56px - 31px);
+        }
+    }
+    
+    .btn-download {
+        display: block;
+        width: 120px;
+        height: 31px;
+        background-color: $secundary-color1;
+        padding: 0 12px;
+        @include flex();
+        justify-content: space-between;
+        text-decoration: none;
+        @include fontStyle(500,16px,19px);
+        color: $text-color-white;
+        border-radius: 4px;
+        
+        .img-download{
+            width: 19px;
+            height: 19px;
+        }
+    }
+
+    .btn-star {
+        @extend .btn-download;
+        width: 41px;
+
+        .img-start{
+            @extend .img-download;
+        }
+    }
+
+    .btn-doi {
+        @extend .btn-download;
+        width: 43px;
+
+        .img-doi {
+            @extend .img-download;
+
+        }
+    }
+
+    h2{
+        width: 100%;
+        @include fontStyle(500,14px,25px);
+        color: $secundary-color1;
+        margin: 12px 0;
+        text-align: right;
+        letter-spacing: 0.05em;
+    }
+   
+    h3 {
+        display: block;
+        padding: 15px 11px 15px 9px;
+        background-color: $secundary-color;
+        @include fontStyle(500,20px,25px);
+        color: $title-color;
+        border: 1px solid #ECECEC;
+        box-sizing: border-box;
+        border-radius: 3px;
+    }
+
+    .div-content{
+        padding: 15px;
+        height: calc(439px - 45px);
+        @include fontStyle(normal,12px,15px,$font-quicksand);
+        color: $text-color;
+        border: 1px solid #ECECEC;
+        box-sizing: border-box;
+        border-radius: 3px;
+        overflow: auto;
+        
+        p {
+            display: block;  
+            margin-bottom: 5px;
+        }
+        
+        .bold{
+            font-weight: bold;
+        }
+        
+        h5 {
+            padding: 20px 0 0;
+            @include fontStyle(normal,12px,15px,$font-quicksand);
+            display: block;
+            font-weight: bold;
+        }
+
+        ul{
+            display: inline;
+            @extend .div-content;
+        }
+
+        li {
+            display: block;
+            margin-bottom: 5px;
+            list-style: none;
+        }
+
+        .last-ul {
+            color: $text-header-color;
+        }
+
+        &::-webkit-scrollbar {
+            width: 5px;
+            background-color: #BFBFBF;
+            border-radius: 5px;
+        }
+    }
+}

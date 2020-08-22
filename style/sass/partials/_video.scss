@@ -1,0 +1,75 @@
+.first-article{
+    width: 1146px;
+    padding: 20px 45px;
+    display: flex;
+    background-color: $background;
+    .video{
+        width: 786px;
+        height: calc(439px + 54px + 19px);
+        margin-top: 19px;
+        .title-video{
+            width: 786px;
+            @include fontStyle(900,20px,25px,);
+            color: $secundary-color1;
+            letter-spacing: 0,5;
+            margin-bottom: 22px;
+        }
+        .video-embed{
+            width: 786px;
+            height: 439px;
+            position: relative;
+            border-radius: 3px;
+            img{
+                width: 786px;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;  
+            }
+            p{
+                width: 734px;
+                @extend %absolute;
+                @include fontStyle(900,24px,25px);
+                letter-spacing: 0.05em;
+                top: 35px;
+                left: 32px;
+                color: $text-color-white;
+            } 
+            .autor-video{
+                @extend %absolute;
+                width: 84px;
+                height: 86px;
+                top: 301px;
+                left: 31px;
+                border-radius: 50%;
+                border: 2px solid transparent;
+                box-shadow: 0 0 0 1px $secundary-color1;
+            }
+            h2{
+                @include fontStyle(900,34px,25px);
+                @extend %absolute;
+                top: 311px;
+                left: 134px;   
+                letter-spacing: 0.05em;
+                color: $text-color-white;            
+            }
+            h3{
+                @include fontStyle(900,20px,25px);
+                @extend %absolute;
+                top: 352px;
+                left: 134px;   
+                letter-spacing: 0.05em;
+                color: $text-color-white;
+            }
+            &:after{
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: inherit;
+                height: inherit;
+                content: '';
+                background: rgba(141, 53, 6, 0.5);
+                border-radius: inherit;
+            }    
+        }
+    }
+}

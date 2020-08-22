@@ -1,10 +1,15 @@
+/* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&family=Roboto:wght@400;500;700;900&display=swap");
+/* Variables */
+/* Mixin */
+/* Extend */
 .first-article .video .video-embed p, .first-article .video .video-embed .autor-video, .first-article .video .video-embed h2, .first-article .video .video-embed h3 {
   position: absolute;
   top: 0;
   z-index: 1;
 }
 
+/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -37,6 +42,7 @@ body {
   display: flex;
 }
 
+/* Menu */
 .nav {
   min-width: 220px;
   background: #FFFFFF;
@@ -74,7 +80,6 @@ body {
 }
 .nav .ul-nav li {
   font-family: "Quicksand", sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 15px;
   line-height: 19px;
@@ -98,6 +103,7 @@ body {
   background: linear-gradient(180deg, #FFB455 0%, #ED7839 100%);
 }
 
+/* Header */
 .header {
   color: #725C5C;
   width: 1146px;
@@ -113,14 +119,12 @@ body {
 }
 .header .data-header p {
   font-family: "Roboto", sans-serif;
-  font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 16px;
 }
 .header .data-header h2 {
   font-family: "Roboto", sans-serif;
-  font-style: normal;
   font-weight: normal;
   font-size: 22px;
   line-height: 26px;
@@ -129,7 +133,6 @@ body {
   width: 97px;
   height: 34px;
   font-family: "Quicksand", sans-serif;
-  font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
@@ -159,7 +162,6 @@ body {
 }
 .header .data-profile {
   font-family: "Quicksand", sans-serif;
-  font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
@@ -172,7 +174,6 @@ body {
 }
 .header .data-profile .email {
   font-family: "Quicksand", sans-serif;
-  font-style: normal;
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
@@ -196,7 +197,6 @@ body {
   text-align: center;
   color: #FFFFFF;
   font-family: "Roboto", sans-serif;
-  font-style: normal;
   font-weight: bold;
   font-size: 10px;
   line-height: 12px;
@@ -218,7 +218,6 @@ body {
 .first-article .video .title-video {
   width: 786px;
   font-family: "Roboto", sans-serif;
-  font-style: normal;
   font-weight: 900;
   font-size: 20px;
   line-height: 25px;
@@ -241,7 +240,6 @@ body {
 .first-article .video .video-embed p {
   width: 734px;
   font-family: "Roboto", sans-serif;
-  font-style: normal;
   font-weight: 900;
   font-size: 24px;
   line-height: 25px;
@@ -261,7 +259,6 @@ body {
 }
 .first-article .video .video-embed h2 {
   font-family: "Roboto", sans-serif;
-  font-style: normal;
   font-weight: 900;
   font-size: 34px;
   line-height: 25px;
@@ -272,7 +269,6 @@ body {
 }
 .first-article .video .video-embed h3 {
   font-family: "Roboto", sans-serif;
-  font-style: normal;
   font-weight: 900;
   font-size: 20px;
   line-height: 25px;
@@ -292,6 +288,7 @@ body {
   border-radius: inherit;
 }
 
+/* Asside */
 .aside {
   width: 242px;
   margin-left: auto;
@@ -315,7 +312,6 @@ body {
   justify-content: space-between;
   text-decoration: none;
   font-family: "Roboto", sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
@@ -335,7 +331,6 @@ body {
 .aside h2 {
   width: 100%;
   font-family: "Roboto", sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 25px;
@@ -349,7 +344,6 @@ body {
   padding: 15px 11px 15px 9px;
   background-color: #FDF1EB;
   font-family: "Roboto", sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 25px;
@@ -362,7 +356,6 @@ body {
   padding: 15px;
   height: calc(439px - 45px);
   font-family: "Quicksand", sans-serif;
-  font-style: normal;
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
@@ -382,7 +375,6 @@ body {
 .aside .div-content h5 {
   padding: 20px 0 0;
   font-family: "Quicksand", sans-serif;
-  font-style: normal;
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
@@ -425,7 +417,6 @@ body {
   padding: 15px 11px 15px 9px;
   background-color: #FDF1EB;
   font-family: "Roboto", sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 25px;
@@ -439,7 +430,6 @@ body {
 }
 .section-resum p {
   font-family: "Quicksand", sans-serif;
-  font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 23px;
@@ -447,6 +437,7 @@ body {
   margin-bottom: 20px;
 }
 
+/* Discution */
 .discution {
   width: 1058px;
   margin: 30px 43px;
@@ -465,7 +456,6 @@ body {
   padding: 15px 11px 15px 9px;
   background-color: #FDF1EB;
   font-family: "Roboto", sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 25px;
@@ -482,7 +472,6 @@ body {
   display: block;
   height: 22px;
   font-family: "Roboto", sans-serif;
-  font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 21px;
@@ -505,7 +494,6 @@ body {
   width: 626px;
   height: 39px;
   font-family: "Quicksand", sans-serif;
-  font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 19px;
@@ -536,7 +524,6 @@ body {
   width: 83px;
   margin: 0;
   font-family: "Quicksand", sans-serif;
-  font-style: normal;
   font-weight: bold;
   font-size: 15px;
   line-height: 16px;
@@ -553,7 +540,6 @@ body {
   padding: 0 0 15px 0;
   display: inline-block;
   font-family: "Quicksand", sans-serif;
-  font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
@@ -563,7 +549,6 @@ body {
 .discution .edit-topic form label {
   display: block;
   font-family: "Quicksand", sans-serif;
-  font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 19px;
@@ -572,7 +557,6 @@ body {
 }
 .discution .edit-topic form input, .discution .edit-topic form textarea {
   font-family: "Quicksand", sans-serif;
-  font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
@@ -616,7 +600,6 @@ body {
   width: 205px;
   height: 31px;
   font-family: "Quicksand", sans-serif;
-  font-style: normal;
   font-weight: bold;
   font-size: 15px;
   line-height: 16px;
@@ -659,7 +642,6 @@ body {
   padding: 0 0 15px 0;
   display: inline-block;
   font-family: "Quicksand", sans-serif;
-  font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 21px;
@@ -669,7 +651,6 @@ body {
 .discution .article-finished p {
   height: 39px;
   font-family: "Quicksand", sans-serif;
-  font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 19px;
@@ -678,7 +659,6 @@ body {
 }
 .discution .article-finished a {
   font-family: "Quicksand", sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 40px;
@@ -689,7 +669,6 @@ body {
 }
 .discution .article-finished .btn-create-topic {
   font-family: "Quicksand", sans-serif;
-  font-style: normal;
   font-weight: bold;
   font-size: 15px;
   line-height: 0px;
@@ -716,7 +695,6 @@ body {
 }
 .discution .article-finished .topic-save h2 {
   font-family: "Quicksand", sans-serif;
-  font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 20px;
@@ -726,7 +704,6 @@ body {
 }
 .discution .article-finished .topic-save h6 {
   font-family: "Quicksand", sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 12px;
   line-height: 15px;
@@ -735,7 +712,6 @@ body {
 }
 .discution .article-finished .topic-save p {
   font-family: "Quicksand", sans-serif;
-  font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
@@ -755,7 +731,6 @@ body {
 }
 .discution .article-finished .success h4 {
   font-family: "Quicksand", sans-serif;
-  font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 20px;
@@ -780,7 +755,6 @@ body {
 }
 .content h2 {
   font-family: "Quicksand", sans-serif;
-  font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 20px;
@@ -789,7 +763,6 @@ body {
 }
 .content h6 {
   font-family: "Quicksand", sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 12px;
   line-height: 15px;
@@ -798,7 +771,6 @@ body {
 }
 .content p {
   font-family: "Quicksand", sans-serif;
-  font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
@@ -855,7 +827,6 @@ body {
 }
 .content .status div {
   font-family: "Quicksand", sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 19px;
@@ -909,7 +880,6 @@ body {
   align-items: center;
   color: #ED7839;
   font-family: "Quicksand", sans-serif;
-  font-style: normal;
   font-weight: bold;
   font-size: 14px;
   line-height: 17px;
@@ -921,7 +891,6 @@ body {
 .content-expanded .coment-topic .coment-div h2 {
   display: block;
   font-family: "Quicksand", sans-serif;
-  font-style: normal;
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
@@ -930,7 +899,6 @@ body {
 .content-expanded .coment-topic p {
   display: block;
   font-family: "Quicksand", sans-serif;
-  font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
@@ -944,6 +912,7 @@ body {
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
 }
 
+/* Footer */
 .section-footer {
   width: 1146px;
   height: 181px;

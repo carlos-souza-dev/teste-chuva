@@ -1,0 +1,78 @@
+/* Header */
+
+.header{
+    color: $text-header-color;
+    width: 1146px;
+    height: 68px;
+    padding: 0 29px 0 36px;
+    background-color: $secundary-color;
+    @include flex;
+    .data-header{
+        width: 789px;
+        p{
+            @include fontStyle(normal,14px,16px,);
+        }
+        h2{
+            @include fontStyle(normal,22px,26px,);
+        }
+    }
+    .language{
+        width: 97px;
+        height: 34px;
+        @include fontStyle(normal,14px,17px,$font-quicksand);
+        color: #333333;
+        // padding: 8px 24px 8px 31px;
+        border: 1px solid #CCCCCC;
+        box-sizing: border-box;
+        border-radius: 3px;
+        @include flex();
+        div{
+            width: 21px;
+            height: 21px;
+            background-image: url('/img/language-image.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        span{
+            width: 5px;
+            height: 5px;
+            margin-left: 5px;
+            background-color: #333333;
+            border-left: 5px solid $secundary-color;
+            border-right: 5px solid $secundary-color;
+            border-top: 5px solid #333333;
+        }
+    }
+    .data-profile{
+        @include fontStyle(normal,14px,17px,$font-quicksand);
+        width: calc(183px + 48px);
+        padding-left: 22px;
+        text-align: right;
+        @include flex;
+        .email{
+        @include fontStyle(normal,12px,15px,$font-quicksand);
+        }
+        .avatar{
+            position: relative;
+            width: 48px;
+            height: 30px;
+            img{
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+            }
+            .notification{
+                width: 12px;
+                height: 12px;
+                position: absolute;
+                top: 0;
+                right: -3px;
+                text-align: center;
+                color: $text-color-white;
+                @include fontStyle(bold, 10px,12px,);
+                background-color: $notification-color;
+                border-radius: 50%;
+            }
+        }
+    }
+}
