@@ -24,6 +24,14 @@ body {
   padding: 15px;
 }
 
+.hide-all {
+  display: none;
+}
+
+.show-all {
+  display: block;
+}
+
 .body {
   max-width: 1366px;
   display: flex;
@@ -407,7 +415,7 @@ body {
   box-sizing: border-box;
   border-radius: 3px;
 }
-.section-resum .more {
+.section-resum .more, .section-resum .less {
   color: #ED7839;
   font-weight: bold;
   cursor: pointer;
@@ -426,6 +434,9 @@ body {
   box-sizing: border-box;
   border-radius: 3px;
 }
+.section-resum .resum-text {
+  margin-bottom: 0px;
+}
 .section-resum p {
   font-family: "Quicksand", sans-serif;
   font-style: normal;
@@ -433,6 +444,7 @@ body {
   font-size: 14px;
   line-height: 23px;
   letter-spacing: 0.02em;
+  margin-bottom: 20px;
 }
 
 .discution {
@@ -517,6 +529,7 @@ body {
   background: linear-gradient(180deg, #FEB254 0%, #F0813D 100%);
   box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
   border-radius: 4px;
+  cursor: pointer;
 }
 .discution .new-topic .btn-create-topic h6 {
   display: block;
@@ -532,10 +545,10 @@ body {
   width: 17px;
   height: 17px;
 }
-.discution .create-topic {
+.discution .edit-topic {
   padding: 17px;
 }
-.discution .create-topic h3 {
+.discution .edit-topic h3 {
   width: 100%;
   padding: 0 0 15px 0;
   display: inline-block;
@@ -547,7 +560,7 @@ body {
   text-align: center;
   color: #725C5C;
 }
-.discution .create-topic form label {
+.discution .edit-topic form label {
   display: block;
   font-family: "Quicksand", sans-serif;
   font-style: normal;
@@ -557,7 +570,7 @@ body {
   color: #ED7839;
   margin-top: 10px;
 }
-.discution .create-topic form input, .discution .create-topic form textarea {
+.discution .edit-topic form input, .discution .edit-topic form textarea {
   font-family: "Quicksand", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -568,9 +581,30 @@ body {
   background: #FFFFFF;
   border: 1px solid #CCCCCC;
   box-sizing: border-box;
-  border-radius: 3px 3px 0 0;
 }
-.discution .create-topic form .div-icon {
+.discution .edit-topic form textarea {
+  border-radius: 4px 4px 0 0;
+}
+.discution .edit-topic form textarea:hover {
+  border: 1px solid #ED7839;
+  border-radius: 4px 4px 0 0;
+}
+.discution .edit-topic form textarea:focus {
+  outline: 0px;
+  border: 1px solid #ED7839;
+}
+.discution .edit-topic form input {
+  border-radius: 3px;
+}
+.discution .edit-topic form input:hover {
+  border: 1px solid #ED7839;
+  border-radius: 3px;
+}
+.discution .edit-topic form input:focus {
+  outline: 0px;
+  border: 1px solid #ED7839;
+}
+.discution .edit-topic form .div-icon {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -578,7 +612,7 @@ body {
   border-bottom: 1px solid #E7E7E7;
   padding-bottom: 15px;
 }
-.discution .create-topic form .div-icon button {
+.discution .edit-topic form .div-icon #btn-submit {
   width: 205px;
   height: 31px;
   font-family: "Quicksand", sans-serif;
@@ -593,8 +627,9 @@ body {
   margin-top: -13px;
   background: linear-gradient(180deg, #FEB154 0%, #F1833E 100%);
   border-radius: 0px 0px 4px 0px;
+  cursor: pointer;
 }
-.discution .create-topic form .icon {
+.discution .edit-topic form .icon {
   width: calc(1025px - 205px);
   height: 31px;
   margin-top: -13px;
@@ -605,7 +640,7 @@ body {
   border-radius: 0px 0px 4px 4px;
   border-top: 0;
 }
-.discution .create-topic form .icon img {
+.discution .edit-topic form .icon img {
   width: 12px;
   height: 12px;
   margin: 11px 15px;
@@ -669,6 +704,7 @@ body {
   box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
   border-radius: 4px;
   transform: translateY(50%);
+  cursor: pointer;
 }
 .discution .article-finished .topic-save {
   width: 1028px;
@@ -838,7 +874,7 @@ body {
 .content-expanded {
   border: 1px solid #E7E7E7;
   box-sizing: border-box;
-  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   margin-top: 30px;
   margin-bottom: 8.5px;
@@ -903,6 +939,9 @@ body {
 }
 .content-expanded .topic-checked {
   background-color: #F8F8F8;
+}
+.content-expanded #all-coments {
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
 }
 
 .section-footer {

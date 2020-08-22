@@ -103,16 +103,15 @@
             <section class="section-resum">
                 <h1 class="title-resume">Resumo</h1>
                 <div class="container">
-                <p class="resum-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae turpis auctor, mollis felis
+                <p class="resum-text ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae turpis auctor, mollis felis
                     ut, commodo turpis. Phasellus felis mauris, egestas eget cursus et, iaculis quis lacus. Fusce auctor
                     eros sed magna ultricies gravida. Etiam aliquam dictum nisl, vel aliquet enim accumsan sit amet.
                     Donec finibus nisi tellus, ut viverra lorem vestibulum ut. Phasellus condimentum orci id leo
                     condimentum lobortis et non lorem. Sed id nisl metus. Quisque sollicitudin ligula in sapien
                     scelerisque, ac gravida eros vestibulum Phasellus condimentum orci id leo condimentum lobortis et
                     non lorem. Sed id nisl metus. Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros
-                    vestibulum. Etiam aliquam dictum nisl, vel aliquet enim accumsan sit ametl accumsant... <span
-                        class="more">ver mais</span></p>
-                <span class="resum-show-more" style="display: none;">
+                    vestibulum. Etiam aliquam dictum nisl, vel aliquet enim accumsan sit ametl accum... <span class="more">mostrar mais</span></p>
+                <span class="resum-show-more hide-all">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae turpis auctor, mollis
                         felis ut, commodo turpis. Phasellus felis mauris, egestas eget cursus et, iaculis quis lacus.
                         Fusce auctor eros sed magna ultricies gravida. Etiam aliquam dictum nisl, vel aliquet enim
@@ -142,7 +141,7 @@
                         nec, iaculis dictum sem. Aliquam at malesuada arcu. Aliquam erat volutpat. Donec varius ipsum
                         purus, ut vehicula purus placerat vitae. Lorem ipsum dolor sit amet, consectetur adipiscing
                         elit.</p>
-                    </p>
+                        <span class="less">mostrar menos</span>
                 </span>
             </div>
             </section>
@@ -157,49 +156,49 @@
                     </div>
                     <p>Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus
                         questionamentos ou sugestões para o autor!</p>
-                    <a href="#" class="btn btn-create-topic">
+                    <a class="btn btn-create-topic" id="btn-new-topic">
                         <img class="plus" src="img/plus.png" alt="mais">
                         <h6>criar tópico</h6>
                     </a>
                 </div>
                 <!-- aparecerar com javascript -->
-                <div class="create-topic" style="display: none;">
+                <div class="edit-topic hide-all">
                     <h3>Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</h3>
                     <form>
                         <label>Assunto</label>
-                        <input type="text" placeholder="Defina um tópico sucinto para notificar os autores...">
+                        <input type="text" id="topic-title" placeholder="Defina um tópico sucinto para notificar os autores...">
 
-                        <label>Conteúdeo</label>
-                        <textarea type="text" rows="5" cols="33"></textarea>
+                        <label >Conteúdeo</label>
+                        <textarea id="topic-text" type="text" rows="5" cols="33"></textarea>
                         <div class="div-icon">
                             <div class="icon">
                                 <img src="img/Shape.png" alt="Botão-Negrito">
                                 <img src="img/Shape (1).png" alt="Botão-itálico">
                             </div>
-                            <button type="submit">Enviar</button>
+                            <button type="submit" id="btn-submit">Enviar</button>
                         </div>
                     </form>
                 </div>
                 <!-- tópico deve aparecer após salvar -->
-                <article class="article-finished" style="display: none;">
+                <article class="article-finished hide-all">
                     <div class="topic-finished">
                         <h2>Seu tópico foi enviado com sucesso! :D</h2>
         
                             <p>Agradecemos por sua contribuição, uma notificação será enviada ao seu email assim que seu tópico for respondido!</p>
                             
-                            <a href="#">Descubra outros trabalhos!</a>
-                            <a href="#" class="btn btn-create-topic">criar novo tópico</a>
+                            <a>Descubra outros trabalhos!</a>
+                            <a class="btn btn-create-topic" id="finished-btn-create">criar novo tópico</a>
                     </div>
                         <div class="topic-save">
-                            <h2>Assunto da pergunta aparece aqui</h2>
-                    <h6>Carlos Henrique Santos</h6>
-                    <p>Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
+                            <h2 id="topic-save-h2"></h2>
+                            <h6>Carlos Henrique Santos</h6>
+                            <p id="topic-save-p"></p>
                         </div>
                         <!-- parte fosca em cima do novo tópico -->
                     <div class="success">
                         <img src="img/check.png" alt="icone de finalizado">
                         <h4>Aguardando feedback dos autores</h4>
-                        <a href="#">Editar tópico</a>
+                        <a id="btn-adit-topic">Editar tópico</a>
                     </div>
                 </article>
                 </div>
@@ -220,7 +219,7 @@
                     </div>                    
                 </div>
 
-                <div class="content topic-one">
+                <div class="content topic-one" id="content-expand">
                     <div>
                         <h2>Assunto da pergunta aparece aqui</h2>
                     <h6>Carlos Henrique Santos</h6>
@@ -235,8 +234,8 @@
                     </div>
                 </div>
                     <!-- será mostrado ao clicar no tópico -->
-                <div class="content-expanded" style="display: none;">
-                    <div class="content topic-one">
+                <div class="content-expanded hide-all">
+                    <div class="content topic-one" id="all-coments">
                             <h2>Assunto da pergunta aparece aqui</h2>
                         <h6>Carlos Henrique Santos</h6>
                         <p>Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo?</p>
@@ -300,6 +299,8 @@
             <img src="/img/imagem - footer.png" alt="">
         </footer>
     </section>
+
+    <script src="/style/js/script.js"></script>
 </body>
 
 </html>
